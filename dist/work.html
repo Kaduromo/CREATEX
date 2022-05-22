@@ -55,19 +55,19 @@
 			</div>
 		</div>
 		<main class="page">
-			<div class="work">
+			<section class="work page__work">
 				<div class="work__container">
 					<div class="work__filter">
 						<ul class="work__filter-list">
-							<li class="work__filter-item _active _icon-house" data-id="all">All Projects</li>
-							<li class="work__filter-item _icon-construction" data-id="construction">Construction</li>
-							<li class="work__filter-item _icon-plan" data-id="projectDevelopment">Project Development</li>
-							<li class="work__filter-item _icon-pantone" data-id="interiorDesign">Interior Design</li>
-							<li class="work__filter-item _icon-painting" data-id="repairs">Repairs</li>
+							<li class="work__filter-item work__filter-item_active _icon-house" data-path="all">All Projects</li>
+							<li class="work__filter-item _icon-construction" data-path="constr">Construction</li>
+							<li class="work__filter-item _icon-plan" data-path="development">Project Development</li>
+							<li class="work__filter-item _icon-pantone" data-path="design">Interior Design</li>
+							<li class="work__filter-item _icon-painting" data-path="repairs">Repairs</li>
 						</ul>
 						<div class="work__filter-body">
 							<div class="work__filter-cards work-cards ">
-								<div class="work-cards__item construction">
+								<div data-target="constr" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work02.jpg" alt="work01">
 									</div>
@@ -77,7 +77,7 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
-								<div class="work-cards__item repairs">
+								<div data-target="repairs" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work05.jpg" alt="work02">
 									</div>
@@ -87,7 +87,7 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
-								<div class="work-cards__item projectDevelopment">
+								<div data-target="development" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work06.jpg" alt="work03">
 									</div>
@@ -97,7 +97,7 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
-								<div class="work-cards__item interiorDesign">
+								<div data-target="design" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work07.jpg" alt="work04">
 									</div>
@@ -107,7 +107,7 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
-								<div class="work-cards__item interiorDesign">
+								<div data-target="design" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work08.jpg" alt="work05">
 									</div>
@@ -117,7 +117,7 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
-								<div class="work-cards__item construction">
+								<div data-target="constr" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work01.jpg" alt="work06">
 									</div>
@@ -127,7 +127,7 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
-								<div class="work-cards__item construction">
+								<div data-target="constr" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work03.jpg" alt="work07">
 									</div>
@@ -137,7 +137,7 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
-								<div class="work-cards__item interiorDesign">
+								<div data-target="design" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work09.jpg" alt="work08">
 									</div>
@@ -147,7 +147,7 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
-								<div class="work-cards__item projectDevelopment">
+								<div data-target="development" class="work-cards__item work-cards__item-active">
 									<div class="work-cards__image">
 										<img src="img/works/work04.jpg" alt="work09">
 									</div>
@@ -157,12 +157,190 @@
 										<button class="work-cards__button button button-border">View Project</button>
 									</div>
 								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work09.jpg" alt="work08">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Scandinavian Style Interior</h3>
+										<p class="work-cards__text">Private houses</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work07.jpg" alt="work04">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Modern Double Bedroom</h3>
+										<p class="work-cards__text">Apartments & flats</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="repairs" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work07.jpg" alt="work04">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Modern Double Bedroom</h3>
+										<p class="work-cards__text">Apartments & flats</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="repairs" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work06.jpg" alt="work03">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Luxury Beach House</h3>
+										<p class="work-cards__text">Private houses</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work08.jpg" alt="work05">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Kids Bedroom With Decorations</h3>
+										<p class="work-cards__text">Apartments & flats</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="development" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work05.jpg" alt="work02">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Modern Cottage</h3>
+										<p class="work-cards__text">Private houses</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work08.jpg" alt="work05">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Kids Bedroom With Decorations</h3>
+										<p class="work-cards__text">Apartments & flats</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work09.jpg" alt="work08">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Scandinavian Style Interior</h3>
+										<p class="work-cards__text">Private houses</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work07.jpg" alt="work04">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Modern Double Bedroom</h3>
+										<p class="work-cards__text">Apartments & flats</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work09.jpg" alt="work08">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Scandinavian Style Interior</h3>
+										<p class="work-cards__text">Private houses</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work07.jpg" alt="work04">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Modern Double Bedroom</h3>
+										<p class="work-cards__text">Apartments & flats</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
+								<div data-target="design" class="work-cards__item work-cards__item-active">
+									<div class="work-cards__image">
+										<img src="img/works/work08.jpg" alt="work05">
+									</div>
+									<div class="work-cards__body">
+										<h3 class="work-cards__title">Kids Bedroom With Decorations</h3>
+										<p class="work-cards__text">Apartments & flats</p>
+										<button class="work-cards__button button button-border">View Project</button>
+									</div>
+								</div>
 							</div>
+							<button class="work__filter-more"><span class="_icon-load-more"></span>Load more</button>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="form">
+			</section>
+			<section class="support">
+				<div class="support__container">
+					<div class="support__feedback support__feedback_work">
+						<div class="support__feedback-slider slider-feedback">
+							<div class="slider-feedback__slider">
+								<h3 class="slider-feedback__title title">What our clients are saying</h3>
+								<div class="slider-feedback__swiper">
+									<div class="slider-feedback__slide">
+										<img src="img/partners/profile-image.png" alt="" class="slider-feedback__profile">
+										<p class="slider-feedback__text">Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.</p>
+										<h4 class="slider-feedback__name">Shawn Edwards</h4>
+										<p class="slider-feedback__position">Position, Company name</p>
+									</div>
+									<div class="slider-feedback__slide">
+										<img src="img/partners/profile-image.png" alt="" class="slider-feedback__profile">
+										<p class="slider-feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quidem adipisci sint molestias neque quisquam incidunt aspernatur!</p>
+										<h4 class="slider-feedback__name">Edwards Shawn</h4>
+										<p class="slider-feedback__position">Position, Company name</p>
+									</div>
+									<div class="slider-feedback__slide">
+										<img src="img/partners/profile-image.png" alt="" class="slider-feedback__profile">
+										<p class="slider-feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam enim similique tenetur. Unde, iusto magni!</p>
+										<h4 class="slider-feedback__name">Shawn Edwards</h4>
+										<p class="slider-feedback__position">Position, Company name</p>
+									</div>
+									<div class="slider-feedback__slide">
+										<img src="img/partners/profile-image.png" alt="" class="slider-feedback__profile">
+										<p class="slider-feedback__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut nihil sapiente totam veniam perspiciatis nemo magni pariatur, unde dolor, fugit fugiat illum?</p>
+										<h4 class="slider-feedback__name">Edwards Shawn</h4>
+										<p class="slider-feedback__position">Position, Company name</p>
+									</div>
+								</div>
+								<div class="slider-feedback__navigation">
+									<div class="slider-feedback__prev nav__prev _icon-right"></div>
+									<div class="slider-feedback__next nav__next _icon-right"></div>
+								</div>
+							</div>
+						</div>
+						<div class="support__feedback-image">
+							<img src="img/partners/feedback-image.png" alt="feedback image">
+						</div>
+					</div>
+				</div>
+				<div class="support__partners support__partners_work">
+					<div class="support__container">
+						<h2 class="support__partners-title title">Our clients</h2>
+						<div class="support__partners-logo">
+							<img src="img/partners/partner01.jpg" alt="partner01">
+							<img src="img/partners/partner02.jpg" alt="partner02">
+							<img src="img/partners/partner03.jpg" alt="partner03">
+							<img src="img/partners/partner04.jpg" alt="partner04">
+							<img src="img/partners/partner05.jpg" alt="partner05">
+							<img src="img/partners/partner06.jpg" alt="partner06">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="form">
 				<div class="form__container">
 					<form class="form__item">
 						<h3 class="form__item-title">A quick way to discuss details</h3>
@@ -191,7 +369,7 @@
 						</div>
 					</form>
 				</div>
-			</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
