@@ -42,23 +42,103 @@
 			</header>
 			<div class="page-banner__gradient">
 				<div class="page-banner__gradient-image">
-					<img src="img/about/about-bg.png" alt="about-bg">
+					<img src="img/about/about-AP.jpg" alt="about-bg">
 				</div>
 			</div>
 			<div class="page-banner__container">
 				<ul class="page-banner__breadcrumbs">
 					<li class="page-banner__breadcrumbs_list"><a href="home.html" class="page-banner__breadcrumbs_link">Homepage</a></li>
-					<li class="page-banner__breadcrumbs_list"><a class="page-banner__breadcrumbs_link -active">About Us</a></li>
+					<li class="page-banner__breadcrumbs_list"><a href="about.html" class="page-banner__breadcrumbs_link">About Us</a></li>
+					<li class="page-banner__breadcrumbs_list"><a class="page-banner__breadcrumbs_link -active">Available Positions</a></li>
 				</ul>
-				<h1 class="page-banner__title">About Us</h1>
-				<p class="page-banner__text">Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service.</p>
+				<h1 class="page-banner__title">AVAILABLE POSITIONS</h1>
+				<p class="page-banner__text">Build your career with Createx Construction Bureau.</p>
 			</div>
 		</div>
 		<main class="page">
-			<div class="news-categories">
-				<div class="news-categories__container">
-					<h2 class="news-categories__title">asdas</h2>
+			<div class="vacancies vacancies__margin">
+				<div class="vacancies__container">
+					<div class="vacancies__block">
+						<div class="vacancies__vacancy">
+							<div class="vacancies__desc">
+								<ul class="vacancies__placement">
+									<li class="vacancies__location"><span class="_icon-location"></span>New York</li>
+									<li class="vacancies__fullTime"><span class="_icon-clock"></span>Full Time</li>
+								</ul>
+								<h3 class="vacancies__title">Heavy Equipment Operator</h3>
+							</div>
+							<button class="vacancies__btn button button-border">Apply now</button>
+						</div>
+						<div class="vacancies__vacancy">
+							<div class="vacancies__desc">
+								<ul class="vacancies__placement">
+									<li class="vacancies__location"><span class="_icon-location"></span>San Francisco</li>
+									<li class="vacancies__fullTime"><span class="_icon-clock"></span>Full Time</li>
+								</ul>
+								<h3 class="vacancies__title">Financial Compliance Analyst</h3>
+							</div>
+							<button class="vacancies__btn button button-border">Apply now</button>
+						</div>
+						<div class="vacancies__vacancy">
+							<div class="vacancies__desc">
+								<ul class="vacancies__placement">
+									<li class="vacancies__location"><span class="_icon-location"></span>New Jersey</li>
+									<li class="vacancies__fullTime"><span class="_icon-clock"></span>Full Time</li>
+								</ul>
+								<h3 class="vacancies__title">Project Manager - Buildings</h3>
+							</div>
+							<button class="vacancies__btn button button-border">Apply now</button>
+						</div>
+						<div class="vacancies__vacancy">
+							<div class="vacancies__desc">
+								<ul class="vacancies__placement">
+									<li class="vacancies__location"><span class="_icon-location"></span>New York</li>
+									<li class="vacancies__fullTime"><span class="_icon-clock"></span>Part Time</li>
+								</ul>
+								<h3 class="vacancies__title">Environment Specialist</h3>
+							</div>
+							<button class="vacancies__btn button button-border">Apply now</button>
+						</div>
+						<div class="vacancies__vacancy">
+							<div class="vacancies__desc">
+								<ul class="vacancies__placement">
+									<li class="vacancies__location"><span class="_icon-location"></span>New York</li>
+									<li class="vacancies__fullTime"><span class="_icon-clock"></span>Full Time</li>
+								</ul>
+								<h3 class="vacancies__title">Accountant</h3>
+							</div>
+							<button class="vacancies__btn button button-border">Apply now</button>
+						</div>
+					</div>
+					<div class="vacancies__resume resume-vacancies">
+						<h2 class="resume-vacancies__title">Didn't find what you were looking for?</h2>
+						<p class="resume-vacancies__text">Send your CV or subscribe to our newsletter to receive information about new vacancies.</p>
+						<div class="resume-vacancies__buttons">
+							<button data-popup="#popup1" class="resume-vacancies__btn button button-border">subscribe</button>
+							<button data-popup="#popup2" class="resume-vacancies__btn button button-orange">send cv</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div class="advantage page-advantage__margin-bottom">
+				<div class="advantage__container">
+					<h2 class="advantage__title title">Employee benefits</h2>
+					<p class="advantage__text">There's always room for talent.</p>
+					<div class="advantage__block">
+						<div class="advantage__block-list list-advantage _icon-brain">
+							<h3 class="list-advantage-ttile">Training</h3>
+							<p class="list-advantage-text">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+						</div>
+						<div class="advantage__block-list list-advantage _icon-success">
+							<h3 class="list-advantage-ttile">Professional Growth</h3>
+							<p class="list-advantage-text">Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.</p>
+						</div>
+						<div class="advantage__block-list list-advantage _icon-budget">
+							<h3 class="list-advantage-ttile">Growing Salary</h3>
+							<p class="list-advantage-text">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<section class="form">
@@ -167,6 +247,57 @@
 				</div>
 			</div>
 		</footer>
+		<div id="popup1" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup__text">
+						<h2 class="popup__title">Subscribe to our newsletter</h2>
+						<form class="popup__form">
+							<label class="popup__label">Name*</label>
+							<input type="text" class="popup__input" placeholder="Your name" required>
+							<label class="popup__label">Email*</label>
+							<input type="text" class="popup__input" placeholder="Your working email" required>
+							<button class="popup__btn button button-orange" type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup2" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup__text">
+						<h2 class="popup__title">Subscribe to our newsletter</h2>
+						<form class="popup__form">
+							<label class="popup__label">Name*</label>
+							<input type="text" class="popup__input" placeholder="Your name" required>
+							<div class="popup__select">
+								<label class="popup__label">Location*</label>
+								<div class="popup__selectWrapper">
+									<div id="select__about"></div>
+								</div>
+							</div>
+							<label class="popup__label">Phone*</label>
+							<input type="text" class="popup__input" placeholder="Your phone number" required>
+							<label class="popup__label">Email*</label>
+							<input type="text" class="popup__input" placeholder="Your working email" required>
+							<label class="popup__label">Сovering letter</label>
+							<textarea class="popup__textarea" placeholder="Your covering letter"></textarea>
+							<div class="popup__file">
+								<label class="popup__label popup__label_file">
+									<span class="_icon-attachment"></span>
+									<span>Attach your CV*</span>
+									<input type="file" class="popup__input popup__input_file">
+								</label>
+							</div>
+							<button class="popup__btn button button-orange" type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="js/app.min.js"></script>
 </body>
