@@ -55,78 +55,57 @@
 			</div>
 		</div>
 		<main class="page">
-			<div class="services">
-				<div class="services__container">
-					<div class="services__item">
-						<div class="services__item-image">
-							<img src="img/services/services-img01.jpg" alt="Construction">
-						</div>
-						<div class="services__item-description">
-							<h2 class="services__item-title">Construction</h2>
-							<p class="services__item-text">Sapien, feugiat faucibus orci arcu, vulputate. Tristique varius consectetur vulputate arcu, scelerisque nisi, nibh. Enim semper id sodales ultricies sed ut ut augue. Mattis habitant venenatis, gravida posuere massa ac interdum. Eget aliquam dignissim ut vestibulum.</p>
-							<a href="" class="services__item-link button button-border">Learn more</a>
-						</div>
+			<section class="contacts">
+				<div class="contacts__container">
+					<h2 class="contacts__title title">Contact us</h2>
+					<p class="contacts__text">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+					<div class="contacts__body">
+						<img src="img/contacts/contact-image.jpg" alt="contacts__image" class="contacts__image">
+						<form action="#" class="contacts__form">
+							<div class="contacts__list">
+								<div class="contacts__subform">
+									<label class="contacts__label">Name*</label>
+									<input class="contacts__input" type="text" placeholder="Your name" required>
+									<label class="contacts__label">Phone*</label>
+									<input class="contacts__input" type="phone" placeholder="Your phone number" required>
+									<label class="contacts__label">Email</label>
+									<input class="contacts__input" type="email" placeholder="Your working email">
+								</div>
+								<div class="contacts__subform">
+									<div class="contacts__select">
+										<label class="contacts__label">I am interested in*</label>
+										<div class="contacts__selectWrapper">
+											<div id="select__interested"></div>
+										</div>
+									</div>
+									<div class="contacts__select">
+										<label class="contacts__label">Location*</label>
+										<div class="contacts__selectWrapper">
+											<div id="select__location"></div>
+										</div>
+									</div>
+									<div class="contacts__radio radio-contacts">
+										<p class="radio-contacts__text">Preferred contact method</p>
+										<input class="radio-contacts__input" type="radio" id="contactPhone" name="contact" value="phone">
+										<label class="radio-contacts__label" for="contactPhone">Phone</label>
+										<input class="radio-contacts__input" type="radio" id="contactEmail" name="contact" value="email">
+										<label class="radio-contacts__label" for="contactEmail">Email</label>
+										<input class="radio-contacts__input" type="radio" id="contactViber" name="contact" value="viber">
+										<label class="radio-contacts__label" for="contactViber">Viber</label>
+									</div>
+								</div>
+							</div>
+							<label class="contacts__label">Message*</label>
+							<textarea class="contacts__textarea" placeholder="Your message"></textarea>
+							<div class="contacts__button">
+								<div class="contacts__checkbox">
+									<input type="checkbox" id="custom-checkbox" required>
+									<label for="custom-checkbox" class="contacts__checkbox_label">I agree to receive communications from Createx Construction Bureau.</label>
+								</div>
+								<button class="contacts__btn button button-orange" type="submit">send request</button>
+							</div>
+						</form>
 					</div>
-					<div class="services__item">
-						<div class="services__item-image">
-							<img src="img/services/services-img02.jpg" alt="Project Development">
-						</div>
-						<div class="services__item-description">
-							<h2 class="services__item-title">Project Development</h2>
-							<p class="services__item-text">Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.</p>
-							<a href="" class="services__item-link button button-border">Learn more</a>
-						</div>
-					</div>
-					<div class="services__item">
-						<div class="services__item-image">
-							<img src="img/services/services-img03.jpg" alt="Interior Design">
-						</div>
-						<div class="services__item-description">
-							<h2 class="services__item-title">Interior Design</h2>
-							<p class="services__item-text">Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget elementum pretium.</p>
-							<a href="" class="services__item-link button button-border">Learn more</a>
-						</div>
-					</div>
-					<div class="services__item">
-						<div class="services__item-image">
-							<img src="img/services/services-img04.jpg" alt="Repairs">
-						</div>
-						<div class="services__item-description">
-							<h2 class="services__item-title">Repairs</h2>
-							<p class="services__item-text">Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor gravida pretium, orci. Nunc sit sollicitudin id egestas mattis. Turpis viverra nec urna ultrices urna.</p>
-							<a href="" class="services__item-link button button-border">Learn more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<section class="form">
-				<div class="form__container">
-					<form class="form__item">
-						<h3 class="form__item-title">A quick way to discuss details</h3>
-						<div class="form__item-item">
-							<div class="form__item-list">
-								<label class="form__item-label">Name*</label>
-								<input type="text" class="form__item-input" placeholder="Your name" required>
-							</div>
-							<div class="form__item-list">
-								<label class="form__item-label">Phone*</label>
-								<input type="tel" class="form__item-input" placeholder="Your phone number" required>
-							</div>
-							<div class="form__item-list">
-								<label class="form__item-label">Email</label>
-								<input type="email" class="form__item-input" placeholder="Your working email">
-							</div>
-							<div class="form__item-list">
-								<label class="form__item-label">Message*</label>
-								<textarea class="form__item-textarea" placeholder="Your message" required></textarea>
-							</div>
-							<div class="form__item-list form__checkbox">
-								<input type="checkbox" class="form__checkbox-checkbox" id="checkbox-custom" required>
-								<label for="checkbox-custom" class="form__checkbox-label">I agree to receive communications from Createx Construction Bureau.</label>
-							</div>
-							<button class="form__btn button-orange" type="submit">send request</button>
-						</div>
-					</form>
 				</div>
 			</section>
 		</main>
@@ -140,30 +119,30 @@
 									<use xlink:href="img/icons/icons.svg#svg-logo-footer"></use>
 								</svg>
 							</a>
-							<div class="footer__info-social footer-social">
-								<a href="##" class="footer-social__whatsApp">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-WhatsApp"></use>
+							<div class="social">
+								<a href="##" class="social__whatsApp">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
+										<path d="M20 9.74244C20 15.1231 15.6047 19.4849 10.1818 19.4849C8.46022 19.4849 6.84289 19.0449 5.43578 18.2727L0 20L1.77222 14.7729C0.878222 13.3049 0.363333 11.5831 0.363333 9.74244C0.363333 4.36178 4.75911 0 10.1818 0C15.6051 0 20 4.36178 20 9.74244ZM10.1818 1.55156C5.62978 1.55156 1.92711 5.226 1.92711 9.74244C1.92711 11.5347 2.51133 13.1944 3.49956 14.5447L2.46822 17.5867L5.64044 16.5784C6.94378 17.4342 8.50511 17.9333 10.182 17.9333C14.7333 17.9333 18.4367 14.2593 18.4367 9.74289C18.4367 5.22644 14.7336 1.55156 10.1818 1.55156ZM15.1398 11.9862C15.0791 11.8869 14.9189 11.8269 14.6784 11.7076C14.4376 11.5882 13.254 11.0102 13.034 10.9309C12.8133 10.8513 12.6524 10.8113 12.4922 11.0502C12.332 11.2893 11.8707 11.8269 11.73 11.9862C11.5896 12.146 11.4493 12.166 11.2084 12.0464C10.968 11.9271 10.1927 11.6747 9.27333 10.8613C8.558 10.2284 8.07489 9.44711 7.93444 9.20778C7.79422 8.96889 7.91978 8.83978 8.04 8.72089C8.14844 8.61378 8.28089 8.442 8.40111 8.30267C8.52178 8.16311 8.56178 8.06378 8.64156 7.90422C8.72222 7.74489 8.682 7.60556 8.62156 7.48578C8.56156 7.36644 8.07978 6.19133 7.87933 5.71311C7.67889 5.23533 7.47867 5.31489 7.338 5.31489C7.19778 5.31489 7.03711 5.29489 6.87667 5.29489C6.71622 5.29489 6.45533 5.35467 6.23467 5.59356C6.01422 5.83267 5.39267 6.41044 5.39267 7.58533C5.39267 8.76044 6.25467 9.89578 6.37533 10.0549C6.49556 10.214 8.03978 12.7038 10.4864 13.66C12.9333 14.6158 12.9333 14.2969 13.3747 14.2569C13.8156 14.2171 14.7982 13.6793 14.9996 13.122C15.1996 12.5638 15.1996 12.0858 15.1398 11.9862Z" fill="white" />
 									</svg>
 								</a>
-								<a href="##" class="footer-social__message">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-message"></use>
+								<a href="##" class="social__message">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
+										<path d="M10 0C4.4775 0 0 4.145 0 9.25875C0 12.1725 1.45375 14.7713 3.72625 16.4688V20L7.13125 18.1313C8.04 18.3825 9.0025 18.5187 10 18.5187C15.5225 18.5187 20 14.3738 20 9.26C20 4.14625 15.5225 0 10 0ZM10.9938 12.4688L8.4475 9.7525L3.47875 12.4688L8.945 6.66625L11.5538 9.3825L16.46 6.66625L10.9938 12.4688Z" fill="white" />
 									</svg>
 								</a>
-								<a href="##" class="footer-social__facebook">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-facebook"></use>
+								<a href="##" class="social__facebook">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
+										<path d="M11.5628 0.00457747L8.78558 0C5.66542 0 3.64903 2.12509 3.64903 5.41423V7.91055H0.85662C0.615322 7.91055 0.419922 8.1115 0.419922 8.35937V11.9763C0.419922 12.2241 0.615545 12.4249 0.85662 12.4249H3.64903V21.5514C3.64903 21.7993 3.84443 22 4.08573 22H7.72904C7.97033 22 8.16573 21.799 8.16573 21.5514V12.4249H11.4307C11.672 12.4249 11.8674 12.2241 11.8674 11.9763L11.8688 8.35937C11.8688 8.24036 11.8226 8.12638 11.7409 8.04215C11.6591 7.95793 11.5477 7.91055 11.4318 7.91055H8.16573V5.79439C8.16573 4.77727 8.40168 4.26094 9.6915 4.26094L11.5624 4.26025C11.8035 4.26025 11.9989 4.0593 11.9989 3.81166V0.453169C11.9989 0.205757 11.8037 0.00503521 11.5628 0.00457747Z" fill="white" />
 									</svg>
 								</a>
 								<a href="##" class="footer-social__twitter">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-twitter"></use>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
+										<path d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07712 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z" fill="white" />
 									</svg>
 								</a>
-								<a href="##" class="footer-social__youtube">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-youtube"></use>
+								<a href="##" class="social__youtube" fill="none">
+									<svg width="24" height="24" viewBox="0 0 128 128" fill="none">
+										<path clip-rule="evenodd" d="M126.72,38.224c0,0-1.252-8.883-5.088-12.794  c-4.868-5.136-10.324-5.16-12.824-5.458c-17.912-1.305-44.78-1.305-44.78-1.305h-0.056c0,0-26.868,0-44.78,1.305    c-2.504,0.298-7.956,0.322-12.828,5.458C2.528,29.342,1.28,38.224,1.28,38.224S0,48.658,0,59.087v9.781    c0,10.433,1.28,20.863,1.28,20.863s1.248,8.883,5.084,12.794c4.872,5.136,11.268,4.975,14.116,5.511    c10.24,0.991,43.52,1.297,43.52,1.297s26.896-0.04,44.808-1.345c2.5-0.302,7.956-0.326,12.824-5.462    c3.836-3.912,5.088-12.794,5.088-12.794S128,79.302,128,68.868v-9.781C128,48.658,126.72,38.224,126.72,38.224z M50.784,80.72    L50.78,44.501l34.584,18.172L50.784,80.72z" fill="white" />
 									</svg>
 								</a>
 							</div>
